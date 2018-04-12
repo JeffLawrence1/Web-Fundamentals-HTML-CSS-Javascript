@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>ninjacat</title>
+    <script src="http://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function() {
+            // $(".cat").click(function() {
+            //     $(this).hide();
+
+            // });
+            $(".cat").click(function() {
+                $(this).attr("src", $(this).attr('data-alt-src'));
+            });
+            // $(".cat").click("data-alt-src", function() {
+            //     $(this).show();
+            // });
+            // $(".cat").click(function() {
+            //     $(this).show();
+            // });
+            // });
+            // $(".cat").click(function() {
+            //     $(this).attr("data-alt-src").show(function());
+            // });
+            $(".cat").click(function() {
+                console.log('data-alt-src value is', $(this).attr('data-alt-src'));
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <img class="cat" src="cat0.png" data-alt-src="ninja0.png" alt="cat pic" style="width:300px;height:100px;">
+    <br>
+    <img class="cat" src="cat1.png" data-alt-src="ninja1.png" alt="cat pic" style="width:300px;height:100px;">
+    <br>
+    <img class="cat" src="cat2.png" data-alt-src="ninja2.png" alt="cat pic" style="width:300px;height:100px;">
+    <br>
+    <img class="cat" src="cat3.png" data-alt-src="ninja3.png" alt="cat pic" style="width:300px;height:100px;">
+    <br>
+    <img class="cat" src="cat4.png" data-alt-src="ninja4.png" alt="cat pic" style="width:300px;height:100px;">
+    <br>
+    <!-- <img class="ninja" src="ninja0.png" alt="ninja pic" style="width:300px;height:100px;">
+    <br>
+    <img class="ninja" src="ninja1.png" alt="ninja pic" style="width:300px;height:100px;">
+    <br>
+    <img class="ninja" src="ninja2.png" alt="ninja pic" style="width:300px;height:100px;">
+    <br>
+    <img class="ninja" src="ninja3.png" alt="ninja pic" style="width:300px;height:100px;">
+    <br>
+    <img class="ninja" src="ninja4.png" alt="ninja pic" style="width:300px;height:100px;"> -->
+</body>
+
+</html>

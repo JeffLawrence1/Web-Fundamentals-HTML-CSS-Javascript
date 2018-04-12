@@ -1,0 +1,43 @@
+body {
+    background-color: black;
+    margin: 0px;
+    padding: 0px;
+}
+
+.row div {
+    width: 20px;
+    height: 20px;
+    /* border: 1px solid black; */
+    display: inline-block;
+}
+
+.brick {
+    background-color: blue;
+}
+
+.coin {
+    background: url("piece_or.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#pacman {
+    background: url("eating.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+}
+
+.empty {}
+
+#score {
+    border: 1px solid white;
+    width: 30px;
+    height: 30px;
+    color: white;
+    padding: 7px;
+    text-align: center;
+}

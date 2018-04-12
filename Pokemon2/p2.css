@@ -1,0 +1,14 @@
+#box {
+    border: 5px solid red;
+    width: 200px;
+    height: 500px;
+    vertical-align: top;
+    display: inline-block;
+}
+
+#wrapper {
+    border: 1px solid black;
+    width: 1000px;
+    height: 2600px;
+    display: inline-block;
+}

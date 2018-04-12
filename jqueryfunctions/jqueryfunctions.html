@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>jqueryfunctions</title>
+    <script src="http://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function() {
+                    $("#clicker").click(function() {
+                        alert("Handler for .click() called.");
+                    });
+                    $("#hidey").click(function() {
+                        $("#hide").hide();
+                        alert("you hid the text!");
+                    });
+                    $("#showey").click(function() {
+                        $("#hide").show();
+                        alert("you showed the text!");
+                    });
+                    $("#ugbut").click(function() {
+                        $("#uggo").toggle();
+                        alert("good you hid that uggo!");
+                    });
+                    $("#danypic").click(function() {
+                        if ($("#dany").is(":hidden")) {
+                            $("#dany").slidedown("slow");
+                        } else {
+                            $("#dany").hide();
+                        };
+
+                    });
+    </script>
+
+</head>
+
+<body>
+    <button id="clicker" type="button">CLICK TESTER</button>
+    <p id="hide">Hide me!!</p>
+    <button id="hidey" type="button">hide</button>
+    <button id="showey" type="button">show</button>
+    <p id="uggo">I'm ugly and need to disappear!</p>
+    <button id="ugbut" type="button">turn off the uggo!</button>
+    <button id="danypic" type="button">show me the pic!</button>
+    <br>
+    <img id="dany" src="dnd.jpg" alt="dany and dragon" style="width:400px;height:250px;">
+
+</body>
+
+</html>

@@ -1,0 +1,18 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#table {
+    border: 2px solid black;
+}
+
+#add {
+    border-bottom: 2px solid gray;
+    width: 400px;
+    margin-left: 200px;
+}
+
+form {
+    text-align: center;
+}
